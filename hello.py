@@ -39,5 +39,31 @@ print(x)
 x = 9E+300
 print(x)
 
-x = int(3E200)
+# f = 3E500
+# print(f)
+f = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# f *= f
+# f *= f
+# f *= f
+# f *= f
+# f *= f
+# f *= f
+# f *= f
+x = int(f)
 print(x)
+
+print(type(True))
+
+x = "Hello"
+y = "Hello"
+print(x == y)
+print(x is y)
+
+x = "Hello"
+y = "He"
+y += "llo"
+print(x, y)
+print(x == y)
+print(x is y)
+
+
