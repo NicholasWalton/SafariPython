@@ -48,3 +48,28 @@ def nowt():
 print(nowt())
 
 # lambda...
+
+# def add(a, b):
+#     return a + b
+#
+
+# Python lambdas are anonymous *single*line* functions..
+add = lambda a, b: a + b
+
+print("This time, with a lambda")
+print(add(1, 2))
+
+addup = add
+
+print(type(addup))
+
+print(addup(9, 1))
+
+def add_to(v):
+    def internal(w):
+        return v + w
+    return internal
+
+add_two = add_to(2)
+
+print(add_two(3))
